@@ -1,0 +1,53 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+header,
+footer,
+body {
+  width: 1600px;
+  border: 1px solid black;
+  margin: auto;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+// @media screen and (min-width: 480px) {
+//   .container {
+//     width: 480px;
+//   }
+// }
+
+.card-thumb {
+  position: absolute;
+}
+
+img {
+  display: block;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+ul,
+p,
+li,
+a {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}

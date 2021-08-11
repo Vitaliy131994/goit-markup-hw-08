@@ -1,0 +1,142 @@
+.footer {
+  background: var(--back-zakaz);
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &__list {
+    display: flex;
+  }
+
+  &__team--icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background: var(--back-zakaz);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background: var(--blue-text);
+    }
+
+    &:hover .nav__icon--instagram {
+      fill: var(--white-text);
+    }
+
+    &:hover .nav__icon--twitter {
+      fill: var(--white-text);
+    }
+
+    &:hover .nav__icon--facebook {
+      fill: var(--white-text);
+    }
+
+    &:hover .nav__icon--linkedin {
+      fill: var(--white-text);
+    }
+  }
+
+  &__logo {
+    color: var(--white-text);
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+
+  &__adress {
+    color: var(--white-text);
+    font-weight: 400;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.7;
+    margin-bottom: 9px;
+  }
+
+  &__item--adress {
+    padding-top: 60px;
+    margin-right: 70px;
+  }
+
+  &__item--join {
+    margin-right: 93px;
+    text-align: center;
+  }
+
+  &__mail {
+    display: block;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.17;
+    color: var(--grey-text);
+    margin-bottom: 9px;
+  }
+
+  &__tel {
+    display: block;
+    margin-bottom: 60px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.17;
+    color: var(--grey-text);
+  }
+
+  &__title {
+    margin-top: 72px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.17;
+    color: var(--white-text);
+  }
+
+  &__form--mail {
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: var(--back-zakaz);
+  }
+
+  &__btn {
+    display: inline-flex;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    align-items: center;
+    text-decoration: none;
+    background-color: var(--blue-text);
+    border-radius: 4px;
+    border: none;
+
+    &--icon {
+      width: 24px;
+      height: 24px;
+      margin-left: 10px;
+      fill: var(--white-text);
+    }
+
+    &--title {
+      margin-left: 29px;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.17;
+      color: var(--white-text);
+    }
+  }
+}

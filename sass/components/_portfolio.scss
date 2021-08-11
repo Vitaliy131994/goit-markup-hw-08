@@ -1,0 +1,114 @@
+.portfolio {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  margin-top: 20px;
+  margin-left: 24px;
+
+  &__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    margin-top: 4px;
+    margin-bottom: 20px;
+    margin-left: 24px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+
+    &--btn {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 100px 0 50px 0;
+    }
+  }
+
+  &__item {
+    width: 370px;
+    height: 404px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+
+    &:nth-child(n + 7) {
+      margin-bottom: 94px;
+    }
+
+    &--btn {
+      margin-right: 30px;
+
+      &:last-child {
+        margin-right: 0px;
+      }
+    }
+  }
+
+  &__btn {
+    height: 38px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    text-decoration: none;
+    color: var(--black-text);
+    background: rgba(245, 244, 250, 1);
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    @include transition(color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: var(--white-text);
+      background: var(--back-blue);
+      border-radius: 4px;
+    }
+  }
+
+  &__click--img {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__click--overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 370px;
+    height: 294px;
+    background-color: rgba(33, 150, 243, 0.9);
+    transform: translateY(100%);
+    opacity: 0;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__item:hover .portfolio__click--overlay {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  &-overlay-text {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--white-text);
+    padding: 63px 25px 63px 25px;
+  }
+}

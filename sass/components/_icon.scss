@@ -1,0 +1,107 @@
+.nav {
+  text-decoration: none;
+  color: var(--black-text);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+
+  &__icon--envelope {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: currentColor;
+  }
+
+  &__icon--smartphone {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: currentColor;
+  }
+
+  &__icon--antenna {
+    width: 65px;
+    height: 70px;
+  }
+
+  &__icon--clock {
+    width: 67px;
+    height: 70px;
+  }
+
+  &__icon--diagram {
+    width: 65px;
+    height: 70px;
+  }
+
+  &__icon--astronaut {
+    width: 65px;
+    height: 70px;
+  }
+
+  &__icon--instagram {
+    width: 20px;
+    height: 20px;
+    fill: var(--grey-color);
+  }
+
+  &__icon--twitter {
+    width: 20px;
+    height: 20px;
+    fill: var(--grey-color);
+  }
+
+  &__icon--facebook {
+    width: 20px;
+    height: 20px;
+    fill: var(--grey-color);
+  }
+
+  &__icon--linkedin {
+    width: 20px;
+    height: 20px;
+    fill: var(--grey-color);
+  }
+
+  &__icon--logo-1 {
+    width: 41px;
+    height: 47px;
+    fill: var(--grey-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__icon--logo-2 {
+    width: 40px;
+    height: 52px;
+    fill: var(--grey-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__icon--logo-3 {
+    width: 43px;
+    height: 41px;
+    fill: var(--grey-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__icon--logo-4 {
+    width: 84px;
+    height: 40px;
+    fill: var(--grey-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__icon--logo-5 {
+    width: 63px;
+    height: 45px;
+    fill: var(--grey-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__icon--logo-6 {
+    width: 94px;
+    height: 45px;
+    fill: var(--grey-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
