@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>goit-markup-hw-02</title>
+    <title>goit-markup-hw-08</title>
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/main.css">
     
@@ -16,53 +16,137 @@
 </head>
 
 <body>
-    <!--шапка сайта-->
+    <!-- шапка сайта -->
+    
     <header class="header">
         <div class="container">
             <nav class="header__nav">
-                <a class="nav__item--logo" href="#top"> <span class="header__logo--blue">Web </span>Studio</a>
+                <a class="nav__item--logo" href="#top"> <span class="header__logo--blue">Web</span> Studio</a>
+    
                 <ul class="nav__item--group">
+    
                     <li class="nav__item">
-                        <a class="nav__item--link" href="index.html">Студия</a>
+    
+                        <a class="nav__item--link-studio" href="index.html">Студия</a>
+    
                     </li>
+    
                     <li class="nav__item">
-                        <a class="nav__item--link-portfolio" href="portfolio.html">Портфолио</a>
+                        <a class="nav__item--link link__blue" href="portfolio.html">Портфолио</a>
+                        <div class="hover__portfolio"></div>
                     </li>
                     <li>
                         <a class="nav__item--link" href="kn">Контакты</a>
                     </li>
                 </ul>
                 <ul class="nav__item--contacts">
-
-                    <li class="contacts__item">
-
-
-                        <a class="contacts__item--grey" href="info@devstudio.com">info@devstudio.com
-                            <svg class="nav__icon--envelope">
-
-                                <use href="./images/symbol-defs.svg#icon-envelope-hover-1">
-
-                                </use>
-
-                            </svg>
+                
+                    <li class="contacts__item--mail">
+                        <a class="contacts__item" href="info@devstudio.com">info@devstudio.com
+                            <!-- <svg class="link__icon">
+                    
+                        <use href="./images/symbol-defs.svg#icon-close">
+                    
+                        </use>
+                    </svg> -->
                         </a>
                     </li>
-
-                    <li class="contacts__item">
-
-                        <a class="contacts__item--grey" href="tel:+38 096 111 11 11">+38 096 111 11 11
-                            <svg class="nav__icon--smartphone">
-
-                                <use href="./images/symbol-defs.svg#icon-smartphone-1">
-
+                
+                    <li class="contacts__item--tel">
+                
+                        <a class="contacts__item" href="tel:+38 096 111 11 11">+38 096 111 11 11
+                            <!-- <svg class="link__icon">
+                    
+                                <use href="./images/symbol-defs.svg#icon-close">
+                    
                                 </use>
-
-                            </svg>
+                            </svg> -->
                         </a>
                     </li>
+                
                 </ul>
+
+    
+                <button type="button" class="menu__button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+    
+                    <svg class="icon-menu_24px" height="16px" width="24px" aria-label="переключатель меню">
+                        <use class="icon__menu" href="./images/symbol-defs.svg#icon-menu_24px"></use>
+                    </svg>
+                </button>
+    
+                <div class="menu__button--container js-menu-container" id="mobile-menu">
+                    <button type="button" class="menu__button js-close-menu">
+                        <svg class="icon-close_24px" height="16px" width="24px" aria-label="переключатель меню">
+                            <use class="icon__close" href="./images/symbol-defs.svg#icon-close_24px"></use>
+                        </svg>
+                    </button>
+                    <ul class="nav__item--group-mobile">
+    
+                        <li class="nav__item">
+    
+                            <a class="nav__item--link-studio-mobile" href="index.html">Студия</a>
+    
+                        </li>
+    
+                        <li class="nav__item">
+                            <a class="nav__item--link-mobile link__blue" href="portfolio.html">Портфолио</a>
+                        </li>
+                        <li>
+                            <a class="nav__item--link-mobile" href="kn">Контакты</a>
+                        </li>
+                    </ul>
+                    <ul class="nav__item--contacts-mobile">
+    
+                        <li class="contacts__item--tel">
+    
+    
+                            <a class="contacts__item--mobile" href="tel:+38 096 111 11 11">+38 096 111 11 11
+    
+                            </a>
+                        </li>
+    
+                        <li class="contacts__item--mail">
+                            <a class="contacts__item--mobile" href="info@devstudio.com">info@devstudio.com
+    
+                            </a>
+    
+                        </li>
+    
+                        <li class="contacts-list__item">
+                            <ul class="nav__contacts-list social-list">
+                                <li class="social-list__item">
+                                    <a class="social-list__link">
+                                        Instagram
+                                    </a>
+                                </li>
+                                <li class="social-list__item">
+                                    <a class="social-list__link">
+                                        Twitter
+                                    </a>
+                                </li>
+                                <li class="social-list__item">
+                                    <a class="social-list__link">
+                                        Facebook
+                                    </a>
+                                </li>
+                                <li class="social-list__item">
+                                    <a class="social-list__link">
+                                        LinkedIn
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+    
+    
+    
             </nav>
         </div>
+       
+        <div class="line" ></div>
+        
+
     </header>
     <section class="btn-section">
         <div class="container">
@@ -133,7 +217,7 @@
                 </li>
                 <li class="portfolio__item">
                     <a class="click__window" href="#">
-                        <img class="clik-img" src="./images/img12.jpg" alt="рисунок-12" height="294" width="370">
+                        <img class="portfolio__click--img" src="./images/img12.jpg" alt="рисунок-12" height="294" width="370">
                         <div class="portfolio__click--overlay">
                             <p class="portfolio-overlay-text">
                                 Технокряк это современная площадка распространения коронавируса. Компании используют эту
@@ -153,7 +237,7 @@
                 </li>
                 <li class="portfolio__item">
                     <a class="click__window" href="#">
-                        <img class="clik-img" src="./images/img13.jpg" alt="рисунок-13" height="294" width="370">
+                        <img class="portfolio__click--img" src="./images/img13.jpg" alt="рисунок-13" height="294" width="370">
                         <div class="portfolio__click--overlay">
                             <p class="portfolio-overlay-text">
                                 Технокряк это современная площадка распространения коронавируса. Компании используют эту
@@ -173,7 +257,7 @@
                 </li>
                 <li class="portfolio__item">
                     <a class="click__window" href="#">
-                        <img class="clik-img" src="./images/img14.jpg" alt="рисунок-14" height="294" width="370">
+                        <img class="portfolio__click--img" src="./images/img14.jpg" alt="рисунок-14" height="294" width="370">
                         <div class="portfolio__click--overlay">
                             <p class="portfolio-overlay-text">
                                 Технокряк это современная площадка распространения коронавируса. Компании используют эту
@@ -278,6 +362,7 @@
     <footer class="footer">
         <div class="container">
             <ul class="footer__list">
+                <div class="foot">
                 <li class="footer__item--adress">
                     <a class="footer__logo" href="#top"> <span class="header__logo--blue">Web </span>Studio</a>
                     <address class="adress">
@@ -338,7 +423,7 @@
                         </a>
                     </div>
                 </li>
-    
+                </div>
                 <li class="footer__item--mail">
                     <h3 class="footer__title">
                         ПОДПИШИТЕСЬ НА РАССЫЛКУ

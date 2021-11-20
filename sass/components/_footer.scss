@@ -1,11 +1,10 @@
 .footer {
   background: var(--back-zakaz);
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
+
+  padding-bottom: 60px;
 
   &__list {
-    display: flex;
+    // display: flex;
   }
 
   &__team--icon {
@@ -65,11 +64,40 @@
 
   &__item--adress {
     padding-top: 60px;
-    margin-right: 70px;
+    text-align: center;
+
+    @media screen and (min-width: $tablet) {
+      display: inline-block;
+      padding-top: 0px;
+      margin-left: 76px;
+      margin-right: 165px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      text-align: left;
+      margin-left: 215px;
+      margin-right: 70px;
+    }
+    // margin-right: 70px;
   }
 
   &__item--join {
-    margin-right: 93px;
+    // margin-right: 93px;
+    text-align: center;
+
+    @media screen and (min-width: $tablet) {
+      display: inline-block;
+      // padding-top: 65px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      text-align: left;
+      // padding-top: 65px;
+    }
+  }
+
+  &__item--mail {
+    display: inline-block;
     text-align: center;
   }
 
@@ -102,6 +130,10 @@
     font-size: 14px;
     line-height: 1.17;
     color: var(--white-text);
+
+    @media screen and (min-width: $tablet) {
+      margin-top: 0px;
+    }
   }
 
   &__form--mail {
@@ -111,6 +143,18 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     background-color: var(--back-zakaz);
+
+    @media screen and (min-width: $tablet) {
+      width: 450px;
+      margin-left: 166px;
+      margin-right: 152px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      width: 358px;
+      margin-left: 93px;
+      margin-right: 12px;
+    }
   }
 
   &__btn {
@@ -118,6 +162,8 @@
     width: 200px;
     height: 50px;
     cursor: pointer;
+    margin-top: 20px;
+
     align-items: center;
     text-decoration: none;
     background-color: var(--blue-text);
@@ -137,6 +183,17 @@
       font-size: 14px;
       line-height: 1.17;
       color: var(--white-text);
+    }
+  }
+
+  .foot {
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      padding-top: 65px;
+    }
+    @media screen and (min-width: $desktop) {
+      display: inline-block;
+      padding-top: 60px;
     }
   }
 }

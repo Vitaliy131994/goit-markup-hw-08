@@ -1,5 +1,7 @@
 .clients {
-  padding-top: 94px;
+  padding-left: 15px;
+  padding-right: 15px;
+  // padding-top: 94px;
 
   &__link {
     display: flex;
@@ -13,7 +15,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 170px;
+    width: 210px;
     height: 92px;
   }
 
@@ -22,13 +24,27 @@
     align-items: center;
     justify-content: center;
     background: var(--white-text);
-    width: 170px;
+    width: 210px;
     height: 92px;
-    margin-bottom: 94px;
+    margin-bottom: 30px;
+    // margin-bottom: 94px;
     border: 1px solid #afb1b8;
     box-sizing: border-box;
     border-radius: 4px;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 0px;
+      margin-right: 30px;
+    }
+
+    &:last-child {
+      margin-bottom: 60px;
+
+      @media screen and (min-width: $desktop) {
+        margin-bottom: 94px;
+      }
+    }
 
     &:hover,
     &:focus {
@@ -63,5 +79,6 @@
   &__list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 }

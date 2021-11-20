@@ -7,26 +7,38 @@
 header,
 footer,
 body {
-  width: 1600px;
-  border: 1px solid black;
-  margin: auto;
+  // width: 1600px;
+  // border: 1px solid black;
+  // margin: auto;
 }
 
 .container {
-  width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
+  // width: 1200px;
+  display: table;
+
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+  }
 }
 
-// @media screen and (min-width: 480px) {
-//   .container {
-//     width: 480px;
-//   }
+.container__hero--title {
+  padding: 0;
+  margin: 0;
+}
+
+// .card-thumb {
+//   position: absolute;
 // }
-
-.card-thumb {
-  position: absolute;
-}
 
 img {
   display: block;
@@ -37,8 +49,8 @@ body {
 }
 
 ul,
-p,
 li,
+p,
 a {
   list-style: none;
   margin: 0;
