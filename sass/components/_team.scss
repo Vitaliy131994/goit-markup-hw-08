@@ -122,6 +122,7 @@
 }
 
 .team__img--mobile {
+  width: 100%;
   @media screen and (min-width: $tablet) {
     display: none;
   }

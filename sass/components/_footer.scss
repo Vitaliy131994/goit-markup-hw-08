@@ -144,12 +144,16 @@
   }
 
   &__form--mail {
-    width: 358px;
+    // width: 358px;
     height: 50px;
     padding-left: 16px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     background-color: var(--back-zakaz);
+
+    @media screen and (min-width: $mobile) {
+      width: 358px;
+    }
 
     @media screen and (min-width: $tablet) {
       width: 450px;
