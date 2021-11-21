@@ -153,7 +153,7 @@
 
     <main id="top">
         <section class="hero">
-            <div class="container">
+            <div class="container__hero">
             <img class="img__mobile" srcset="./images/Header__img--480.jpg 1x, ./images/Header__img2x--480.jpg 2x"
             src="./images/Header__img--480.jpg" alt="рисунок-герой" width="480px"
             >
@@ -163,13 +163,14 @@
 
             <img class="img__desktop" srcset="./images/Header__img--1600.jpg 1x, ./images/Header__img2x--1600.jpg 2x"
                 src="./images/Header__img--1600.jpg" alt="рисунок-герой" width="1600px">
-
+            </div>
             <div class="container">
                 <h1 class="hero-title">
                     Эффективные решения <br> для вашего бизнеса
                 </h1>
                     <button class="hero-btn" data-modal-open>Заказать услугу</button>
             </div>
+            <div class="container__hero">
             <div class="backdrop is-hidden" data-modal>
                 <div class="modal__window">
             
@@ -778,6 +779,7 @@
                     </div>
                 </li>
                 </div>
+                
                 <li class="footer__item--mail">
                     <h3 class="footer__title">
                         ПОДПИШИТЕСЬ НА РАССЫЛКУ
@@ -794,11 +796,9 @@
                     </svg>
 
                     </a>
-                        
-                 
-                        
-
+            
                 </li>
+                
 
             </ul>
         </div>

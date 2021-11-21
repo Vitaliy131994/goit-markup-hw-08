@@ -1,6 +1,6 @@
 .team {
-  padding-left: 15px;
-  padding-right: 15px;
+  // padding-left: 15px;
+  // padding-right: 15px;
   // width: 1600px;
   background: var(--back-comanda-prod);
 
@@ -33,11 +33,11 @@
     display: flex;
     flex-wrap: wrap;
     // justify-content: space-between;
-  }
 
-  // &__image {
-  //   margin-bottom: 10px;
-  // }
+    @media screen and (min-width: $desktop) {
+      margin: 0px 200px 0px 200px;
+    }
+  }
 
   &__title--worker {
     font-weight: 500;

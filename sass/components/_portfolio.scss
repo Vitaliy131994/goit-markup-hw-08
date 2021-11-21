@@ -17,12 +17,12 @@
   &__list {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 15px;
-    padding-right: 15px;
+    // padding-left: 15px;
+    // padding-right: 15px;
 
     @media screen and (min-width: $desktop) {
-      padding-left: 215px;
-      padding-right: 215px;
+      padding-left: 200px;
+      padding-right: 200px;
     }
 
     &--btn {
@@ -30,13 +30,14 @@
       flex-wrap: wrap;
       // justify-content: center;
       align-items: center;
-      padding: 60px 15px 40px 15px;
+      padding: 60px 0px 40px 0px;
 
       @media screen and (min-width: $tablet) {
         padding: 60px 150px 30px 150px;
       }
 
       @media screen and (min-width: $desktop) {
+        justify-content: center;
         padding: 94px 0px 50px 0px;
       }
     }
@@ -71,9 +72,9 @@
       }
     }
 
-    &:nth-child(3n) {
-      margin-right: 0;
-    }
+    // &:nth-child(3n) {
+    //   margin-right: 0;
+    // }
 
     // &:nth-child(n + 7) {
     //   margin-bottom: 94px;
@@ -185,5 +186,11 @@
 .image-section {
   @media screen and (min-width: $desktop) {
     padding-bottom: 34px;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .portfolio__item:nth-child(3n) {
+    margin-right: 0px;
   }
 }

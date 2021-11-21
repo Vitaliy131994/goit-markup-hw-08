@@ -99,6 +99,10 @@
   &__item--mail {
     display: inline-block;
     text-align: center;
+
+    @media screen and (min-width: $desktop) {
+      text-align: left;
+    }
   }
 
   &__mail {
@@ -133,6 +137,9 @@
 
     @media screen and (min-width: $tablet) {
       margin-top: 0px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-left: 93px;
     }
   }
 

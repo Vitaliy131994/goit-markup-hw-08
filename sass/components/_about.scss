@@ -1,5 +1,5 @@
 .about {
-  padding: 60px 15px 60px 15px;
+  padding: 60px 0px 60px 0px;
 
   @media screen and (min-width: $desktop) {
     padding: 94px 0px 94px 0px;
@@ -13,6 +13,7 @@
 
     @media screen and (min-width: $desktop) {
       display: inline-block;
+      margin: 0px 200px 0px 200px;
     }
   }
 
@@ -21,7 +22,7 @@
 
     @media screen and (min-width: $tablet) {
       display: inline-block;
-      margin-right: 26px;
+      margin-right: 24px;
     }
   }
 
