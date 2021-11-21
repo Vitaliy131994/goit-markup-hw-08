@@ -1600,6 +1600,7 @@ h3 {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: var(--back-zakaz);
+  color: var(--back-header);
 }
 
 @media screen and (min-width: 480px) {
